@@ -8,6 +8,8 @@
 import UIKit
 import Alamofire
 
+
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -19,5 +21,21 @@ class ViewController: UIViewController {
 
     
 
+}
+
+
+extension ViewController {
+    class API {
+        let apiKey = "live_K1y56ClXhWDtIJG8RKRlewO2DAhhxdLgvAlO6QG8ZWeogneQRJ4jJ6VDYXqmkijg"
+    }
+    
+    class var catUrl : String {
+        return "https://api.thecatapi.com/v1/images/search"
+    }
+    
+    func getRandomCatPicture(){
+        let url = "/v1/images/search"
+        
+    }
 }
 
